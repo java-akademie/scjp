@@ -1,0 +1,6 @@
+dieser text soll gesplittet werden
+wort1...wort2...wort3.....
+abcxxxdsafxxxsadfdsfaxxxsdafxxxasdf
+a
+a
+a

@@ -1,0 +1,45 @@
+
+%n 	neue Zeile
+%b 	Boolean
+%% 	Prozentzeichen
+%s 	String 
+%c  Unicode-Zeichen
+%d	Dezimalzahl
+%x 	Hexadezimalschreibweise
+%t 	Datum und Zeit
+%f  Fließkommazahl
+%e 	wissenschaftliche Notation
+
+
+
+
+%tA, %ta  vollständiger/abgekürzter Name des Wochentags
+%tB, %tb  vollständiger/abgekürzter Name des Monatsnamens 
+
+%te, %td  Monatstag numerisch ohne beziehungsweise mit 
+ 		führenden Nullen (1–31 beziehungsweise 01–31) 
+
+%tk, %tl  Stundenangabe bezogen auf 24 
+		beziehungsweise 12 Stunden (0–23, 1–12) 
+
+%tH, %tI  zweistellige Stundenangabe bezogen auf 24 
+		beziehungsweise 12 Stunden (00–23, 01–12) 
+
+%tC	zweistelliges Jahrhundert (00–99) 
+%tj	Tag des Jahres (001–366) 
+%tM	zweistellige Minutenangabe (00–59) 
+%tm	zweistellige Monatsangabe (in der Regel 01–12) 
+%tS	zweistellige Sekundenangabe (00–59)
+%tY	vierstellige Jahresangabe
+%ty	die letzten beiden Ziffern der Jahresangabe (00–99)
+%tZ	abgekürzte Zeitzone
+%tZ	Zeitzone mit Verschiebung zur GMT
+%tR	Stunden und Minuten in der Form %tH:%tM
+%tT	Stunden/Minuten/Sekunden: %tH:%tM:%tS
+%tD	Datum in der Form %tm/%td/%ty
+%tF	ISO-8601-Format %tY-%tm-%td
+
+%tc	komplettes Datum mit Zeit in der Form 
+		%ta %tb %td %tT %tZ %tY
+ 
+
