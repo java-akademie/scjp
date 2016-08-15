@@ -51,6 +51,14 @@ public class Test3_FindenVonTeilstrings
 		findenVonTeilstrings(
 				"Die Fett geschriebenen Texte - reluctant=zurueckhaltend ?",
 				"Echt <b>fett</b> der text, <b>cool</b>", "<b>.*?</b>");
+
+		findenVonTeilstrings(
+				"aaa",
+				"javax.persistence.Entity(name=hugo)", "\\(name=[.*?]\\)");
+
+		findenVonTeilstrings(
+				"Test Annotation",
+				"javax.persistence.Entity(name=xyz)", "^javax.persistence.Entity(name=.*?)$");
 	}
 
 
