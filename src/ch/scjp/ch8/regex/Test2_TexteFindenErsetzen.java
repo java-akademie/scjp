@@ -15,7 +15,8 @@ public class Test2_TexteFindenErsetzen
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-			findAll("name=hugo;alter=25;adresse=basel", "\\w+=\\w+");
+		findAll("name=hugo;alter=25;adresse=basel", "\\w+=\\w+");
+
 		findAll("gewicht=23;alter=44;hoehe=12;laenge=7", "\\w+=\\d+");
 
 
@@ -26,17 +27,16 @@ public class Test2_TexteFindenErsetzen
 
 		findSchluesselwertpaare();
 
-		findInLine("@javax.persistence.Entity(name=Person2tc3)", "@javax\\.persistence\\.Entitiy\\(name=(\\w+)\\)");
+		
+		findInLine("@javax.persistence.Entity(name=Person2tc3)",
+				"@javax\\.persistence\\.Entitiy\\(name=(\\w+)\\)");
 
-		findInLine("Michael Bauer Sonnenweg 2 10000 Berlin", 
-				"(\\w+ 2) (\\d+ Berlin)");
+		findInLine("Michael Bauer Sonnenweg 2 10000 Berlin", "(\\w+ 2) (\\d+ Berlin)");
 
 		findInLine("Michael Bauer Sonnenweg 2 10000 Berlin", "(Bauer \\w+ 2) (\\d+ Berlin)");
-		
+
 		findInLine("Michael Bauer Sonnenweg 2 10000 Berlin",
 				"Michael Bauer (\\w+) 2 (\\d+) Berlin");
-
-
 	}
 
 
@@ -123,7 +123,7 @@ public class Test2_TexteFindenErsetzen
 
 			for (int i = 0; i <= mr.groupCount(); i++)
 			{
-				System.out.println("i="+i+" "+mr.group(i));
+				System.out.println("i=" + i + " " + mr.group(i));
 			}
 		}
 		catch (Exception e)

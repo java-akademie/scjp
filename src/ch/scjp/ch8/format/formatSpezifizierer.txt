@@ -1,38 +1,36 @@
+%n neue Zeile
+%b Boolean
+%% Prozentzeichen
+%s String 
+%c Unicode-Zeichen
+%d Dezimalzahl
+%x Hexadezimalschreibweise
+%t Datum und Zeit
+%f Fliesskommazahl
+%e wissenschaftliche Notation
 
-%n 	neue Zeile
-%b 	Boolean
-%% 	Prozentzeichen
-%s 	String 
-%c  Unicode-Zeichen
-%d	Dezimalzahl
-%x 	Hexadezimalschreibweise
-%t 	Datum und Zeit
-%f  Fließkommazahl
-%e 	wissenschaftliche Notation
+--------------
 
-
-
-
-%tA, %ta  vollständiger/abgekürzter Name des Wochentags
-%tB, %tb  vollständiger/abgekürzter Name des Monatsnamens 
+%tA, %ta  vollstÃ¤ndiger/abgekÃ¼rzter Name des Wochentags
+%tB, %tb  vollstÃ¤ndiger/abgekÃ¼rzter Name des Monatsnamens 
 
 %te, %td  Monatstag numerisch ohne beziehungsweise mit 
- 		führenden Nullen (1–31 beziehungsweise 01–31) 
+ 		fÃ¼hrenden Nullen (1â€“31 beziehungsweise 01â€“31) 
 
 %tk, %tl  Stundenangabe bezogen auf 24 
-		beziehungsweise 12 Stunden (0–23, 1–12) 
+		beziehungsweise 12 Stunden (0â€“23, 1â€“12) 
 
 %tH, %tI  zweistellige Stundenangabe bezogen auf 24 
-		beziehungsweise 12 Stunden (00–23, 01–12) 
+		beziehungsweise 12 Stunden (00â€“23, 01â€“12) 
 
-%tC	zweistelliges Jahrhundert (00–99) 
-%tj	Tag des Jahres (001–366) 
-%tM	zweistellige Minutenangabe (00–59) 
-%tm	zweistellige Monatsangabe (in der Regel 01–12) 
-%tS	zweistellige Sekundenangabe (00–59)
+%tC	zweistelliges Jahrhundert (00â€“99) 
+%tj	Tag des Jahres (001â€“366) 
+%tM	zweistellige Minutenangabe (00â€“59) 
+%tm	zweistellige Monatsangabe (in der Regel 01â€“12) 
+%tS	zweistellige Sekundenangabe (00â€“59)
 %tY	vierstellige Jahresangabe
-%ty	die letzten beiden Ziffern der Jahresangabe (00–99)
-%tZ	abgekürzte Zeitzone
+%ty	die letzten beiden Ziffern der Jahresangabe (00â€“99)
+%tZ	abgekÃ¼rzte Zeitzone
 %tZ	Zeitzone mit Verschiebung zur GMT
 %tR	Stunden und Minuten in der Form %tH:%tM
 %tT	Stunden/Minuten/Sekunden: %tH:%tM:%tS
@@ -42,4 +40,3 @@
 %tc	komplettes Datum mit Zeit in der Form 
 		%ta %tb %td %tT %tZ %tY
  
-

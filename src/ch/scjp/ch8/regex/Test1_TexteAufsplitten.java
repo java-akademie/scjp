@@ -13,74 +13,58 @@ public class Test1_TexteAufsplitten
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-		textAufsplittenMitScanner(
-				"Michael&bauer&sonnenweg 2&10000&berlin", "&");
-		textAufsplittenMitScanner(
-				"Michael bauer sonnenweg 2   10000  berlin", "\\s+");
-		textAufsplittenMitScanner(
-				"Michaelxxxbauerxsonnenweg 2xxxx10000xxberlin", "x+");
 
-		textAufsplittenSplit("Michael&bauer&sonnenweg 2&10000&berlin",
-				"&");
-		textAufsplittenSplit(
-				"Michael bauer sonnenweg 2   10000  berlin", "\\s+");
-		textAufsplittenSplit(
-				"Michaelxxxbauerxsonnenweg 2xxxx10000xxberlin", "x+");
 
-		textAufsplittenSplit("dies...ist...ein...text", "\\.\\.\\.");
-		textAufsplittenSplit("ein$$weiterer$$text", "\\$\\$");
-	
-		fileAufsplitten("temp/fileToSplit.txt", "\\s+");
-		fileAufsplitten("temp/fileToSplit.txt", "\\.+");
-		fileAufsplitten("temp/fileToSplit.txt", "xxx");
-		fileAufsplitten("temp/fileToSplit.txt", "\\d+|\\.+|xxx|\\s+");
-		// fileAufsplitten("temp/fileToSplit.txt","\\d*");
 
-		textAufsplittenSplit("elf 11 zwoelf 12 dreizehn 13 ", " \\d\\d ");
-
+		textAufsplittenMitScanner();
+		textAufsplittenSplit();
+		fileAufsplitten();
 	}
 
 
-	private static void textAufsplittenMitScanner(String text,
-			String delimiter)
+
+	private static void textAufsplittenSplit()
 	{
-		String ueb = String.format(
-				"Text aufsplitten mit Scanner: (%s), text=%s",
-				delimiter, text);
+		textAufsplittenMitSplit("Michael&bauer&sonnenweg 2&10000&berlin", "&");
+		textAufsplittenMitSplit("Michael bauer sonnenweg 2   10000  berlin", "\\s+");
+		textAufsplittenMitSplit("Michaelxxxbauerxsonnenweg 2xxxx10000xxberlin", "x+");
 
-		MyTools.uebOut(ueb, 2);
+		textAufsplittenMitSplit("dies...ist...ein...text", "\\.\\.\\.");
+		textAufsplittenMitSplit("ein$$weiterer$$text", "\\$\\$");
 
-		Scanner scanner = new Scanner(text);
-		scanner.useDelimiter(delimiter);
 
-		while (scanner.hasNext())
-		{
-			System.out.println(scanner.next());
-		}
-		scanner.close();
+		textAufsplittenMitSplit("elf    11    zwoelf    12   dreizehn  13   ", " \\d\\d ");
+		textAufsplittenMitSplit("elf    11    zwoelf    12   dreizehn  13   ", " +\\d\\d +");
 	}
 
 
-	private static void textAufsplittenSplit(String input,
-			String regex)
+	private static void textAufsplittenMitSplit(String input, String regex)
 	{
-		String ueb = String.format(
-				"Text aufsplitten mit Split: (%s), text=%s", regex,
+		String ueb = String.format("Text aufsplitten mit Split: regex='%s', input='%s'", regex,
 				input);
 
 		MyTools.uebOut(ueb, 2);
 
 		String[] sa = input.split(regex);
+		System.out.println(sa.length);
 		System.out.println(Arrays.toString(sa));
 	}
 
 
-
-	private static void fileAufsplitten(String file, String delimiter)
-			throws FileNotFoundException
+	private static void fileAufsplitten() throws FileNotFoundException
 	{
-		String ueb = String.format("File aufsplitten: (%s), file=%s",
-				delimiter, file);
+		fileAufsplitten("temp/fileToSplit.txt", "\\s+");
+		fileAufsplitten("temp/fileToSplit.txt", "\\.+");
+		fileAufsplitten("temp/fileToSplit.txt", "xxx");
+		fileAufsplitten("temp/fileToSplit.txt", "\\d+\\.+\\s+|\\d+\\.+|xxx|\\s+");
+
+		fileAufsplitten("temp/fileToSplit.txt", "keinSplit");
+	}
+
+
+	private static void fileAufsplitten(String file, String regex) throws FileNotFoundException
+	{
+		String ueb = String.format("File aufsplitten: regex='%s', file='%s'", regex, file);
 
 		MyTools.uebOut(ueb, 2);
 
@@ -88,7 +72,7 @@ public class Test1_TexteAufsplitten
 
 		Scanner sc = new Scanner(fis);
 
-		sc.useDelimiter(delimiter);
+		sc.useDelimiter(regex);
 
 		while (sc.hasNext())
 		{
@@ -96,6 +80,35 @@ public class Test1_TexteAufsplitten
 		}
 
 		sc.close();
+	}
+
+
+
+	private static void textAufsplittenMitScanner()
+	{
+		textAufsplittenMitScanner("Michael&bauer&sonnenweg 2&10000&&&berlin", "&");
+		textAufsplittenMitScanner("Michael&bauer&sonnenweg 2&10000&&&berlin", "&+");
+		textAufsplittenMitScanner("Michael bauer sonnenweg 2   10000  berlin", "\\s+");
+		textAufsplittenMitScanner("Michaelxxxbauerxsonnenweg 2xxxx10000xxberlin", "x+");
+	}
+
+
+	private static void textAufsplittenMitScanner(String input, String regex)
+	{
+		String ueb = String.format("Text aufsplitten mit Scanner: regex='%s', input='%s'", regex,
+				input);
+
+		MyTools.uebOut(ueb, 2);
+
+		Scanner scanner = new Scanner(input);
+		scanner.useDelimiter(regex);
+
+		while (scanner.hasNext())
+		{
+			System.out.println(scanner.next());
+		}
+
+		scanner.close();
 	}
 
 }

@@ -85,7 +85,7 @@ public class Test4_PruefenVonZeichenketten
 		int mm = Integer.parseInt(arr[1]);
 		int jj = Integer.parseInt(arr[2]);
 
-		int[] ml = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		int[] ml = { 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 		if (jj % 400 == 0)
 			ml[2] = 29;
@@ -99,7 +99,7 @@ public class Test4_PruefenVonZeichenketten
 					ml[2] = 28;
 
 		if (mm >= 1 && mm <= 12 && tt >= 1 && tt <= ml[mm])
-			System.out.println("datum ok");
+			System.out.println("datum OK");
 		else
 			System.out.println("datum NOK");
 	}
