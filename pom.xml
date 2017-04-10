@@ -14,7 +14,7 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>ch.java_akademie.mytools</groupId>
+			<groupId>ch.java_akademie</groupId>
 			<artifactId>mytools</artifactId>
 			<version>1.8.0</version>
 		</dependency>
