@@ -13,9 +13,6 @@ public class Test1_TexteAufsplitten
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-
-
-
 		textAufsplittenMitScanner();
 		textAufsplittenSplit();
 		fileAufsplitten();
