@@ -5,7 +5,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>scjp</groupId>
+	<groupId>ch.jmb.workspace_se</groupId>
 
 	<artifactId>scjp</artifactId>
 
@@ -14,7 +14,7 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>ch.java_akademie</groupId>
+			<groupId>ch.jmb</groupId>
 			<artifactId>mytools</artifactId>
 			<version>1.8.0</version>
 		</dependency>
