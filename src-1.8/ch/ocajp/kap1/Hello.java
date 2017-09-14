@@ -4,7 +4,7 @@ package ch.ocajp.kap1;
 import java.util.Enumeration;
 import java.util.Properties;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmb.tools.MyTools;
 
 public class Hello
 {
