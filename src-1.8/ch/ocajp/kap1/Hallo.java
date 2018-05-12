@@ -1,7 +1,7 @@
 
 package ch.ocajp.kap1;
 
-import ch.jmb.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Hallo
 {
