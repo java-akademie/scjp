@@ -1,6 +1,6 @@
 package ch.scjp.ch5;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Assertion
 {

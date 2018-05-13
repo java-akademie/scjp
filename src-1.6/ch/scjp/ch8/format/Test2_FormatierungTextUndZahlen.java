@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.util.Formatter;
 import java.util.Locale;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Test2_FormatierungTextUndZahlen
 {

@@ -1,6 +1,6 @@
 package ch.scjp.ch6.uebungen;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 class BaseClass
 {

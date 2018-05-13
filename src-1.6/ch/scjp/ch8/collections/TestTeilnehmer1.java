@@ -1,6 +1,6 @@
 package ch.scjp.ch8.collections;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 /**
  * 08. Mai 2006

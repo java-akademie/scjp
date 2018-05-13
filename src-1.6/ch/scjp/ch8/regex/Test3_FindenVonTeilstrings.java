@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Test3_FindenVonTeilstrings
 {

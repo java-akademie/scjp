@@ -4,8 +4,7 @@ import java.text.ParseException;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import ch.java_akademie.tools.MyTools;
-//import sun.util.calendar.ZoneInfo;
+import ch.jmildner.tools.MyTools;
 
 public class Test1_TimeZoneAndLocale
 {

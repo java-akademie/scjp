@@ -3,7 +3,7 @@ package ch.scjp.ch6.verehrer;
 import java.util.LinkedList;
 import java.util.List;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Dame
 {

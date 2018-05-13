@@ -1,6 +1,6 @@
 package ch.scjp.ch6.verehrer;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class TestVerehrer
 {

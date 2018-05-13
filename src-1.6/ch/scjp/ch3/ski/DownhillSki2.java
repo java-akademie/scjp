@@ -1,6 +1,6 @@
 package ch.scjp.ch3.ski;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 class DownhillSki2
 {

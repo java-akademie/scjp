@@ -1,6 +1,6 @@
 package ch.scjp.ch3.uebungen;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Ueb304
 {

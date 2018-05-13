@@ -4,7 +4,7 @@
  */
 package ch.scjp.ch7;
 
-import ch.java_akademie.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 class MyRunnable implements Runnable
 {
