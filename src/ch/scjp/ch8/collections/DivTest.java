@@ -25,9 +25,9 @@ public strictfp class DivTest
 	public static void main(String[] args) throws Exception
 	{
 
-		Person4 p1 = new Person4(1, "ahörnchen", "bdorf");
-		Person4 p2 = new Person4(2, "chörnchen", "adorf");
-		Person4 p3 = new Person4(3, "bhörnchen", "cdorf");
+		Person4 p1 = new Person4(1, "ahoernchen", "bdorf");
+		Person4 p2 = new Person4(2, "choernchen", "adorf");
+		Person4 p3 = new Person4(3, "bhoernchen", "cdorf");
 
 		Set<Person4> s = new TreeSet<Person4>(new AddrComparator());
 
